@@ -5,23 +5,6 @@
     margin-right: 1rem;
 }
 
-.title-section {
-    padding-bottom: 1rem;
-    border-bottom: solid 3px #000;
-}
-
-a {
-    text-decoration: none;
-}
-
-#email {
-    opacity: 0;
-}
-
-h4 {
-    margin: 0px;
-}
-
-nav, footer, #experiencias {
+nav, footer {
     background-color: #434445 !important;
 }
