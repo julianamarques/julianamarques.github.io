@@ -17,8 +17,11 @@
     <body>
         <header uk-sticky>
             <nav class="uk-navbar-container uk-light uk-flex uk-wrap" uk-navbar="mode: click">
+                
+                
                 <div class="uk-margin-left uk-navbar-left">
-                    <img src="img/photo.jpg" alt="Juliana" class="photo">
+                    <span uk-icon="icon: menu; ratio: 2" uk-toggle="target: #sidebar"></span>
+                    <img src="img/photo.jpg" alt="Juliana" class="photo-head">
                     <span>Juliana Marques</span>
                 </div>
 
@@ -42,6 +45,10 @@
                         Sou estudante de Análise e Desenvolvimento de Sistemas no IFPI - Instituto Ferederal do Piauí. 
                         Atualmente sou estagiária em desenvolvimento web no Conselho Regional de Engenharia e Agronomia do Piauí (CREA-PI), 
                         onde atuo no desenvolvimento e manutenção de módulos para o Sistema de Gestão do CREA-PI, o SIGEC, utilizando a linguagem Java.
+                    </p>
+
+                    <p uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+                        <a href="./resume.pdf" target="_blank" class="uk-link-text">Baixe meu curriculo</a>
                     </p>
                 </div>
             </section>
@@ -79,6 +86,32 @@
                     </ul>
                 </div>
             </section>
+
+            <div id="sidebar" uk-offcanvas="overlay: true">
+                <div class="uk-offcanvas-bar">
+
+                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+                    <img src="img/photo.jpg" class="photo-sidebar uk-align-center">
+
+                    <h4 class="uk-text-center">Juliana Marques</h4>
+                    
+                    <h6 class="uk-text-center">Desenvolvedora web</h6>
+                    
+                    <p class="uk-text-center">
+                        Estagiária em desenvolvimento web no CREA-PI
+                    </p>
+
+                    <div class="uk-align-center">
+                        <a href="https://github.com/julianamarques" target="_blank" uk-tooltip="Visit me on Github" class="uk-icon-button" uk-icon="github"></a>
+                        <a href="https://www.linkedin.com/in/julianabmarques/" target="_blank" uk-tooltip="Visit me on Linkedin" class="uk-icon-button" uk-icon="linkedin"></a>
+                        <a href="https://www.facebook.com/julianabmarques96" target="_blank" uk-tooltip="Visit me on Facebook" class="uk-icon-button" uk-icon="facebook"></a>
+                        <a href="mailto:julianabmarques@live.com" target="_blank" uk-tooltip="Send me an email" class="uk-icon-button" uk-icon="mail"></a>
+                        <a href="https://tinyurl.com/y5lqc4ba" target="_blank" uk-tooltip="Send me a message on Whatsapp" class="uk-icon-button" uk-icon="whatsapp"></a>
+                        <a href="https://tinyurl.com/y5lqc4ba" target="_blank" uk-tooltip="Show my resume" class="uk-icon-button" uk-icon="file-pdf"></a>
+                    </div>
+                </div>
+            </div>
         </main>
 
         <footer class="uk-light uk-flex uk-padding uk-flex uk-flex-wraper">
