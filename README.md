@@ -1,5 +1,7 @@
 # julianamarques.github.io
 
-My personal site
+Site estático com informações profissionais
 
-Developed with [UIKit](https://getuikit.com/)
+Desenvolvido com HTML, CSS e JavaScript
+
+O [UIKit](https://getuikit.com/) foi usado como framework para estilo
